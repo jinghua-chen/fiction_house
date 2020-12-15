@@ -15,8 +15,6 @@ import xyz.zinglizingli.books.core.crawl.BiquCrawlSource;
 @Slf4j
 @Configuration
 public class CrawlDingdianConfig {
-
-
     @Bean
     @ConfigurationProperties(prefix = "dingdian.crawlsource") // prefix值必须是application.yml中对应属性的前缀
     @ConditionalOnProperty(prefix = "crawl.website",name = "type",havingValue = "3")
